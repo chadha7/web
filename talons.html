@@ -1,0 +1,241 @@
+<html>
+<head>
+    <title>Chaussures pour femmes</title>
+    <style>
+ 
+    body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+ ul {
+            display: flex;
+            gap: 6em;/* Ajoute de l'espacement entre les éléments */
+        }
+       
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+
+        }
+        
+        .prod {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+            gap: 20px; /* Espacement entre les produits */
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+                footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+        }
+        
+
+       
+        .product {
+            text-align: center;
+            border-radius: 15px; 
+            overflow: hidden; 
+            background-color: #fff; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 10px;
+        }
+
+       
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px; 
+        }
+
+        
+        .product h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e60000;
+        }
+
+        .add-to-cart {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1 em;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3; 
+}
+          
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1 align="center">Chaussures pour femmes</h1>
+<ul> 
+<li><a href="acceuil.html">Acceuil</a></li>
+<li><a href="boots.html">Boots</a></li>
+<li><a href="bottines.html">Bottine</a></li>
+<li><a href="talons.html">Talons</a></li>
+</ul>
+   
+</header>
+
+
+
+
+<section class="prod">
+    
+    <div class="product">
+        <img src="immg1.jpg" alt="Talons blanc cassé">
+        <h3>Talons blanc cassé</h3>
+        <p>Prix: <span class="price">55dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons blanc cassé', 55)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg2.jpg" alt="Talons chic">
+        <h3>Talons chic</h3>
+        <p>Prix: <span class="price">65dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons chic', 65)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg3.jpg" alt="Talons noir chic">
+        <h3>Talons noir chic</h3>
+        <p>Prix: <span class="price">60dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons noir chic', 60)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg4.jpg" alt="Talons rouge">
+        <h3>Talons rouge</h3>
+        <p>Prix: <span class="price">60dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons rouge', 60)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg5.jpg" alt="Talons burgundy">
+        <h3>Talons burgundy</h3>
+        <p>Prix: <span class="price">89.9dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons burgundy', 89.9)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg6.jpg" alt="Talons de la beauté">
+        <h3>Talons de la beauté</h3>
+        <p>Prix: <span class="price">69.9dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons de la beauté', 69.9)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg7.jpg" alt="Talon blanc">
+        <h3>Talon blanc</h3>
+        <p>Prix: <span class="price">59dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talon blanc', 59)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg8.jpg" alt="Talon transparent">
+        <h3>Talon transparent</h3>
+        <p>Prix: <span class="price">50dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talon transparent', 50)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg9.jpg" alt="Talons vert">
+        <h3>Talons vert</h3>
+        <p>Prix: <span class="price">75dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons vert', 75)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg10.jpg" alt="Talons violet">
+        <h3>Talons violet</h3>
+        <p>Prix: <span class="price">75dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons violet', 75)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg11.jpg" alt="Talons marron">
+        <h3>Talons marron</h3>
+        <p>Prix: <span class="price">66dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons marron', 66)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg12.jpg" alt="Talons bleu roi">
+        <h3>Talons bleu roi</h3>
+        <p>Prix: <span class="price">65dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons bleu roi', 65)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="immg13.jpg" alt="Talons bleu ciel">
+        <h3>Talons bleu ciel</h3>
+        <p>Prix: <span class="price">90dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons bleu ciel', 90)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="immg14.jpg" alt="Talons chic">
+        <h3>Talons chic</h3>
+        <p>Prix: <span class="price">90dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons chic', 90)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="immg15.jpg" alt="Talons foshia">
+        <h3>Talons foshia</h3>
+        <p>Prix: <span class="price">90dt</span></p>
+        <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+        <button class="add-to-cart" onclick="addToCart('Talons foshia', 90)">Ajouter au panier</button>
+    </div>
+
+</section>
+<br>
+<footer>
+Bienvenue, mes chers clients !
+Découvrez notre sélection exclusive de sacs, chaussures et accessoires, conçue pour allier élégance, confort et tendance. Que vous soyez à la recherche de pièces uniques ou d'incontournables de la mode, nous avons ce qu'il vous faut pour sublimer votre style à chaque occasion.</hr>
+</footer>
+</body>
+</html>
+

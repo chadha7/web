@@ -1,0 +1,230 @@
+<html>
+<head>
+    <title>Chaussures pour femmes</title>
+    <style>
+   
+    body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+ ul {
+            display: flex;
+            gap: 6em;/* Ajoute de l'espacement entre les éléments */
+        }
+       
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+
+        }
+        
+        .prod {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+            gap: 20px; 
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+         footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+        }
+        
+
+  
+        .product {
+            text-align: center;
+            border-radius: 15px; 
+            overflow: hidden; 
+            background-color: #fff; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 10px;
+        }
+
+      
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px; 
+}
+        
+        .product h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e60000; 
+        }
+
+        .add-to-cart {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1 em;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3; 
+        }
+       
+        
+</style>
+
+</head>
+<body>
+<header>
+    <h1 align="center">Chaussures pour femmes</h1>
+   <ul> 
+<li><a href="acceuil.html">Acceuil</a></li>
+<li><a href="boots.html">Boots</a></li>
+<li><a href="bottines.html">Bottine</a></li>
+<li><a href="talons.html">Talons</a></li>
+</ul>
+    
+
+</header>
+
+
+
+
+    
+
+    <div class="prod">
+        <div class="product">
+            <img src="imgg1.png" alt="Bottines noir long">
+            <h3>Bottines noir long</h3>
+            <p>Prix: <span class="price">60dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines noir long', 60)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="imgg2.png" alt="Bottines blanc">
+            <h3>Bottines blanc</h3>
+            <p>Prix: <span class="price">69.9dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines blanc', 69.9)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="imgg3.png" alt="Bottines rosé">
+            <h3>Bottines rosé</h3>
+            <p>Prix: <span class="price">55dt</span></p>
+            <p>les pointures disponibles:<span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines rosé', 55)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="imgg4.png" alt="Bottines blanc">
+            <h3>Bottines blanc</h3>
+            <p>Prix: <span class="price">70dt</span></p>
+            <p>les pointures disponibles:<span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines blanc', 70)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="imgg5.png" alt="Bottines marron a talon">
+            <h3>Bottines marron a talon</h3>
+            <p>Prix: <span class="price">89.9dt</span></p>
+            <p>les pointures disponibles:<span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines marron a talon', 89.9)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="imgg6.png" alt="Bottines marron">
+            <h3>Bottines marron</h3>
+            <p>Prix: <span class="price">89.9dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines marron', 89.9)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="imgg7.png" alt="Bottines class">
+            <h3>Bottines class</h3>
+            <p>Prix: <span class="price">49dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines class', 49)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="imgg8.png" alt="Bottines de la nouvelle collection">
+            <h3>Bottines de la nouvelle collection</h3>
+            <p>Prix: <span class="price">89.9dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines de la nouvelle collection', 89.9)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="imgg9.png" alt="Bottines marron de la nouvelle collection">
+            <h3>Bottines marron de la nouvelle collection</h3>
+            <p>Prix: <span class="price">75dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines marron de la nouvelle collection', 75)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="imgg10.png" alt="Bottines noir chic">
+            <h3>Bottines noir chic</h3>
+            <p>Prix: <span class="price">75dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines noir chic', 75)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="imgg11.png" alt="Bottines class">
+            <h3>Bottines class</h3>
+            <p>Prix: <span class="price">55dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines class', 55)">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="imgg12.jpg" alt="Bottines beige">
+            <h3>Bottines beige</h3>
+            <p>Prix: <span class="price">65dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines beige', 65)">Ajouter au panier</button>
+        </div>
+<div class="product">
+            <img src="imgg13.jpg" alt="Bottines noir de la beauté">
+            <h3>Bottines noir de la beauté</h3>
+            <p>Prix: <span class="price">85dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines noir de la beauté', 85)">Ajouter au panier</button>
+        </div>
+<div class="product">
+            <img src="imgg14.jpg" alt="Bottines de la beauté">
+            <h3>Bottines de la beauté</h3>
+            <p>Prix: <span class="price">75dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines de la beauté', 75)">Ajouter au panier</button>
+        </div>
+<div class="product">
+            <img src="imgg15.jpg" alt="Bottines burgundy">
+            <h3>Bottines burgundy</h3>
+            <p>Prix: <span class="price">65dt</span></p>
+            <p>les pointures disponibles: <span class="sizes">36, 37, 38, 39, 40</span></p>
+            <button class="add-to-cart" onclick="addToCart('Bottines burgundy', 65)">Ajouter au panier</button>
+        </div>
+    </div>
+
+<footer>
+Bienvenue, mes chers clients !
+Découvrez notre sélection exclusive de sacs, chaussures et accessoires, conçue pour allier élégance, confort et tendance. Que vous soyez à la recherche de pièces uniques ou d'incontournables de la mode, nous avons ce qu'il vous faut pour sublimer votre style à chaque occasion.</hr>
+</footer>
+
+
+</body>
+</html>

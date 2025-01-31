@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessoires femmes de mode en Tunisie </title>
+    <style>
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+            gap: 20px; /* Espacement entre les produits */
+            padding: 20px;
+        }
+nav {
+            background-color: #333;
+            padding: 1em;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1em;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+ header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        #search {
+            padding: 8px;
+            width: 50%;
+            max-width: 300px;
+            margin-top: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+ .product:hover {
+            transform: translateY(-10px);
+        }
+footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+        }
+.product {
+            text-align: center;
+            border-radius: 15px; /* Coins arrondis */
+            overflow: hidden; /* Pour ne pas que l'image dépasse les bords arrondis */
+            background-color: #fff; /* Couleur de fond du produit blanc */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+            padding: 10px;
+        }
+.product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px; /* Coins arrondis sur l'image */
+        }
+.price {
+            font-weight: bold;
+            color: #e60000; /* Couleur rouge pour le prix */
+        }
+.add-to-cart {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+ .add-to-cart:hover {
+            background-color: #0056b3; /* Changement de couleur au survol */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 align="center">Accessoires pour Femmes</h1>
+</header>
+<nav>
+        <ul><li><a href="acceuil.html">Acceuil</a></li>
+            <li><a href="collier.html">Collier</a></li>
+            <li><a href="bo.html">Boucle d'oreille</a></li>
+            <li><a href="br.html">Bracelet</a></li>
+            <li><a href="go.html">Gourmette</a></li>
+        </ul>
+</nav>
+<section class="product-grid">
+    <!-- Chaque produit -->
+    <div class="product">
+        <img src="b1.png" alt="bracelet">
+        <h3>Bracelet Trèfle Jaune</h3>
+        <p>Prix: <span class="price">24,99TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet Trèfle Jaune', 24,99TND)">Ajouter au panier</button>
+    </div>
+   
+     
+     <div class="product">
+        <img src="b2.png" alt="bracelet">
+        <h3>Bracelet Trèfle bleu marine</h3>
+        <p>Prix: <span class="price">24,99TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet Trèfle bleu marine', 24,99TND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="b3.png" alt="bracelet">
+        <h3>Bracelet Trèfle bleu ciel</h3>
+        <p>Prix: <span class="price">24,99TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet Trèfle bleu marine', 24,99TND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="b4.png" alt="bracelet">
+        <h3>Bracelet léopard à zircons et pierres colorées</h3>
+        <p>Prix: <span class="price">27,99TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet léopard à zircons et pierres colorées', 27,99TND)">Ajouter au panier</button>
+    </div>
+   <div class="product">
+        <img src="b5.png" alt="bracelet">
+        <h3>Bracelet tortue pierre bleue et contour en zircons</h3>
+        <p>Prix: <span class="price">23,99TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier petit AIN', 23,99TND)">Ajouter au panier</button>
+    </div>
+   <div class="product">
+        <img src="b6.png" alt="bracelet">
+        <h3>Bracelet Aîn</h3>
+        <p>Prix: <span class="price">19,950TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet Aîn', 19,950TND)">Ajouter au panier</button>
+    </div>
+   
+   <div class="product">
+        <img src="b7.png" alt="bracelet">
+        <h3>Bracelet Chams</h3>
+        <p>Prix: <span class="price">20,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet chams', 20,920 TND)">Ajouter au panier</button>
+    </div>
+   <div class="product">
+        <img src="b8.png" alt="bracelet">
+        <h3>Bracelet Zigzag</h3>
+        <p>Prix: <span class="price">20,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet Zigzag', 20,920 TND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="b12.png" alt="bracelet">
+        <h3>Bracelet Dabdoub avec Pierre Vert</h3>
+        <p>Prix: <span class="price">25,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet Dabdoub avec Pierre Vert', 25,920 TND)">Ajouter au panier</button>
+    </div>
+   <div class="product">
+        <img src="b13.png" alt="bracelet">
+        <h3>Bracelet doré avec deux poisson</h3>
+        <p>Prix: <span class="price">23,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet doré avec deux poisson', 23,920 TND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="b14.png" alt="bracelet">
+        <h3>Bracelet chainette doré</h3>
+        <p>Prix: <span class="price">15,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet chainette doré',15,920 TND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="b11.png" alt="bracelet">
+        <h3>Bracelet Serpenté</h3>
+        <p>Prix: <span class="price">25,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet Serpent',25,920 TND)">Ajouter au panier</button>
+    </div>
+     <div class="product">
+        <img src="b15.png" alt="bracelet">
+        <h3>Bracelet piéce de monnaie (australia 1998) doré strasse</h3>
+        <p>Prix: <span class="price">25,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet piéce de monnaie (australia 1998) doré strasse',25,920 TND)">Ajouter au panier</button>
+    </div>
+   <div class="product">
+        <img src="b17.png" alt="bracelet">
+        <h3>Bracelet lirra doré</h3>
+        <p>Prix: <span class="price">22,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Bracelet lirra doré',22,920 TND)">Ajouter au panier</button>
+    </div>
+   
+   
+   
+</section>
+<footer>
+Bienvenue, mes chers clients !
+Découvrez notre sélection exclusive de sacs, chaussures et accessoires, conçue pour allier élégance, confort et tendance. Que vous soyez à la recherche de pièces uniques ou d'incontournables de la mode, nous avons ce qu'il vous faut pour sublimer votre style à chaque occasion.</hr>
+</footer>
+
+</body>
+</html>

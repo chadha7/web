@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessoires femmes de mode en Tunisie </title>
+    <style>
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+            gap: 20px; /* Espacement entre les produits */
+            padding: 20px;
+        }
+nav {
+            background-color: #333;
+            padding: 1em;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1em;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+ header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        #search {
+            padding: 8px;
+            width: 50%;
+            max-width: 300px;
+            margin-top: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+ .product:hover {
+            transform: translateY(-10px);
+        }
+footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+        }
+.product {
+            text-align: center;
+            border-radius: 15px; /* Coins arrondis */
+            overflow: hidden; /* Pour ne pas que l'image dépasse les bords arrondis */
+            background-color: #fff; /* Couleur de fond du produit blanc */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+            padding: 10px;
+        }
+.product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px; /* Coins arrondis sur l'image */
+        }
+.price {
+            font-weight: bold;
+            color: #e60000; /* Couleur rouge pour le prix */
+        }
+.add-to-cart {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+ .add-to-cart:hover {
+            background-color: #0056b3; /* Changement de couleur au survol */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 align="center">Accessoires pour Femmes</h1>
+</header>
+<nav>
+        <ul>
+            <li><a href="acceuil.html">Acceuil</a></li>
+            <li><a href="collier.html">Collier</a></li>
+            <li><a href="bo.html">Boucle d'oreille</a></li>
+            <li><a href="br.html">Bracelet</a></li>
+            <li><a href="go.html">Gourmette</a></li>
+        </ul>
+</nav>
+<section class="product-grid">
+    <!-- Chaque produit -->
+    <div class="product">
+        <img src="p1.png" alt="collier">
+        <h3>Collier avec Perle Noir</h3>
+        <p>Prix: <span class="price">34,99TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier avec Perle Noir', 34,99TND)">Ajouter au panier</button>
+    </div>
+   
+     
+     <div class="product">
+        <img src="p4.png" alt="collier">
+        <h3>Collier pendentif rectangle à zircons colorés</h3>
+        <p>Prix: <span class="price">24,99TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier pendentif rectangle à zircons colorés', 24,99TND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="p5.png" alt="collier">
+        <h3>Collier Rivière Rosé</h3>
+        <p>Prix: <span class="price">15,99TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier Rivière Rosé', 15,99TND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="p6.png" alt="collier">
+        <h3>Collier a col discret bondage doré</h3>
+        <p>Prix: <span class="price">24,99TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier a col discret bondage doré', 24,99TND)">Ajouter au panier</button>
+    </div>
+   <div class="product">
+        <img src="p7.png" alt="collier">
+        <h3>Collier petit AIN</h3>
+        <p>Prix: <span class="price">24,99TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier petit AIN', 24,99TND)">Ajouter au panier</button>
+    </div>
+   <div class="product">
+        <img src="p8.png" alt="collier">
+        <h3>Collier ovale noir avec des petits coeurs</h3>
+        <p>Prix: <span class="price">19,950TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier ovale noir avec des petits coeurs', 19,950TND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="p9.png" alt="collier">
+        <h3>Collier doré avec strass</h3>
+        <p>Prix: <span class="price">20,930TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier doré avec strass', 20,930TNDTND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="p10.png" alt="collier">
+        <h3>Collier Coeur Doré</h3>
+        <p>Prix: <span class="price">23,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier Coeur Doré', 23,920 TND)">Ajouter au panier</button>
+    </div>
+   <div class="product">
+        <img src="p11.png" alt="collier">
+        <h3>Collier Coeur Doré</h3>
+        <p>Prix: <span class="price">23,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier Coeur Doré', 23,920 TND)">Ajouter au panier</button>
+    </div>
+   <div class="product">
+        <img src="p12.png" alt="collier">
+        <h3>Collier</h3>
+        <p>Prix: <span class="price">23,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier', 23,920 TND)">Ajouter au panier</button>
+    </div>
+   <div class="product">
+        <img src="p13.png" alt="collier">
+        <h3>Collier</h3>
+        <p>Prix: <span class="price">23,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier', 23,920 TND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="p14.png" alt="collier">
+        <h3>Collier Trèfle Doré</h3>
+        <p>Prix: <span class="price">23,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier Trèfle Doré', 23,920 TND)">Ajouter au panier</button>
+    </div>
+   <div class="product">
+        <img src="p15.png" alt="collier">
+        <h3>Collier Trèfle Doré</h3>
+        <p>Prix: <span class="price">23,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier Trèfle Doré', 23,920 TND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="p16.png" alt="collier">
+        <h3>Collier</h3>
+        <p>Prix: <span class="price">20,920TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier', 20,920 TND)">Ajouter au panier</button>
+  </div>
+    <div class="product">
+        <img src="p17.png" alt="collier">
+        <h3>Collier</h3>
+        <p>Prix: <span class="price">11,960TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier ', 11,960 TND)">Ajouter au panier</button>
+    </div>
+   
+ <div class="product">
+        <img src="p18.png" alt="collier">
+        <h3>Collier</h3>26,950TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier ', 14,950 TND)">Ajouter au panier</button>
+    </div>
+    <div class="product">
+        <img src="p19.png" alt="collier">
+        <h3>Collier</h3>
+        <p>Prix: <span class="price">26,950TND</span></p>
+        <button class="add-to-cart" onclick="addToCart('Collier ', 26,950 TND)">Ajouter au panier</button>
+    </div>
+   
+   
+   
+</section>
+<footer>
+Bienvenue, mes chers clients !
+Découvrez notre sélection exclusive de sacs, chaussures et accessoires, conçue pour allier élégance, confort et tendance. Que vous soyez à la recherche de pièces uniques ou d'incontournables de la mode, nous avons ce qu'il vous faut pour sublimer votre style à chaque occasion.</hr>
+</footer>
+
+</body>
+</html>

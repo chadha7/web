@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Clientèle</title>
+    <link rel="stylesheet" href="serviceClient.css">
+      <script>
+        function validateForm() {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Vérification du nom
+            if (name === '') {
+                alert('Veuillez entrer votre nom.');
+                return false;
+            }
+
+            // Vérification de l'email
+            if (email === '' || !validateEmail(email)) {
+                alert('Veuillez entrer une adresse email valide.');
+                return false;
+            }
+
+            // Vérification du message
+            if (message === '') {
+                alert('Veuillez entrer votre message.');
+                return false;
+            }
+
+            return true;
+        }
+
+        function validateEmail(email) {
+            const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return regex.test(email);
+        }
+    </script>
+    <style>
+.fond {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+}
+.n {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+.form {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+</style>
+</head>
+<body>
+    <div class="fond">
+        <header>
+            <h1>Besoin d'Aide ?</h1>
+            <p>Notre service clientèle est à votre disposition pour répondre à vos questions et résoudre vos problèmes.</p>
+        </header>
+        
+        <section>
+            <h2>Contactez-nous</h2>
+<p><strong>cité Ennour Gafsa</strong></p>
+            <p><strong>Téléphone :</strong> +216 74 321 567</p>
+            <p><strong>Email :</strong> <a href="mailto:support@exemple.com">support@exemple.com</a></p>
+            <p><strong>Heures d'ouverture :</strong> LUNDI - SAMEDI , 10h00 - 20h00</p>
+        </section>
+        
+        <section >
+            <h2>Formulaire de Contact</h2>
+            <form onsubmit="return validateForm()" action="#" method="post" class="n">
+                <label for="name">Nom :</label><br>
+                <input type="text" id="name" name="name" placeholder="Votre nom complet" ><br>
+                
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" placeholder="Votre adresse email"><br>
+                
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Décrivez votre problème ou question"></textarea><br>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

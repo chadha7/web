@@ -1,0 +1,230 @@
+<html>
+<head>
+     <style>
+    body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+ ul {
+            display: flex;
+            gap: 6em;/* Ajoute de l'espacement entre les éléments */
+        }
+       
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+   
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+            gap: 20px; /* Espacement entre les produits */
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+       
+        .product:hover {
+            transform: translateY(-10px);
+        }
+        /*c'est pour ecriver le petit text dans unne marge noir au dessous*/
+         footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+        }
+        
+
+        
+        .product {
+            text-align: center;
+            border-radius: 15px; /* Coins arrondis */
+            overflow: hidden; /* Pour ne pas que l'image dépasse les bords arrondis */
+            background-color: #fff; /* Couleur de fond du produit blanc */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+            padding: 10px;
+        }
+
+        /* Style pour les images des produits */
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px; /* Coins arrondis sur l'image */
+        }
+
+        /* Style pour les titres et prix */
+        .product h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e60000; /* Couleur rouge pour le prix */
+        }
+
+        
+        .add-to-cart {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3; 
+        }
+         
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">Sacs pour femmes</h1>
+         <ul> 
+<li><a href="acceuil.html">Acceuil</a></li>
+<li><a href="sacs à main.html">Sac a main</a></li>
+<li><a href="sacs à dos.html">Sac a dos</a></li>
+</ul>
+        
+    </header>
+
+    <section id="Sac à dos">
+        
+
+
+        <div class="product-grid">
+           
+            <div class="product">
+                <img src="iimgg1.jpg" alt="Sac à dos blanc">
+                <h3>Sac à dos blanc</h3>
+                <p>Prix: <span class="price">60dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos blanc', 60)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg2.jpg" alt="Sac à dos">
+                <h3>Sac à dos</h3>
+                <p>Prix: <span class="price">45dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos', 45)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg3.jpg" alt="Sac à dos chic">
+                <h3>Sac à dos chic</h3>
+                <p>Prix: <span class="price">55dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos chic', 55)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg4.jpg" alt="Sac à dos marron chic">
+                <h3>Sac à dos marron chic</h3>
+                <p>Prix: <span class="price">60dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos marron chic', 60)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg5.jpg" alt="Sac à dos élégant">
+                <h3>Sac à dos élégant</h3>
+                <p>Prix: <span class="price">69dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos élégant', 69)">Ajouter au panier</button>
+            </div>
+
+            <!-- Vous pouvez ajouter plus de produits en suivant le même format -->
+            <div class="product">
+                <img src="iimgg6.jpg" alt="Sac à dos marron">
+                <h3>Sac à dos marron</h3>
+                <p>Prix: <span class="price">60dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos marron', 60)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg7.jpg" alt="Sac à dos bleu ciel">
+                <h3>Sac à dos bleu ciel</h3>
+                <p>Prix: <span class="price">49dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos bleu ciel', 49)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg8.jpg" alt="Sac à dos noir">
+                <h3>Sac à dos noir</h3>
+                <p>Prix: <span class="price">35dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos noir', 35)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg9.jpg" alt="Sac à dos classique">
+                <h3>Sac à dos classique</h3>
+                <p>Prix: <span class="price">50dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos classique', 50)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg10.jpg" alt="Sac à main bleu">
+                <h3>Sac à main bleu</h3>
+                <p>Prix: <span class="price">75dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à main bleu', 75)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg12.jpg" alt="Sac à dos rouge">
+                <h3>Sac à dos rouge</h3>
+                <p>Prix: <span class="price">55dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos rouge', 55)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg11.jpg" alt="Sac à dos pour pc">
+                <h3>Sac à dos pour pc</h3>
+                <p>Prix: <span class="price">95dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos pour pc', 95)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg13.jpg" alt="Sac à dos vert">
+                <h3>Sac à dos vert</h3>
+                <p>Prix: <span class="price">85dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos vert', 85)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg14.jpg" alt="Sac à dos violet">
+                <h3>Sac à dos violet</h3>
+                <p>Prix: <span class="price">59.9dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos violet', 59.9)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="iimgg15.jpg" alt="Sac à dos en cuir">
+                <h3>Sac à dos en cuir</h3>
+                <p>Prix: <span class="price">60dt</span></p>
+                <button class="add-to-cart" onclick="addToCart('Sac à dos en cuir', 60)">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+   
+<br>
+<footer>
+Bienvenue, mes chers clients ! Découvrez notre sélection exclusive de sacs, chaussures et accessoires, conçue pour allier élégance, confort et tendance. Que vous soyez à la recherche de pièces uniques ou d'incontournables de la mode, nous avons ce qu'il vous faut pour sublimer votre style à chaque occasion.
+</footer>
+</body>
+
+</html>
